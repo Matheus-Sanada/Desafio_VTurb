@@ -19,7 +19,7 @@
   
   section {
   
-    width: 100%;
+    width: 100vw;
     
   }
 
@@ -53,6 +53,33 @@
 
   
   // FORMATAÇÃO DO FORMULARIO
+
+  #msgError {
+    width: 200px;
+    margin-left: 180px;
+    text-align: center;
+    color: hsl(0, 100%, 74%);
+    background-color: hsl(0, 80%, 80%);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    
+
+  }
+
+  #msgSuccess {
+    width: 200px;
+    margin-left: 180px;
+    text-align: center;
+    color: hsl(249, 10%, 26%);
+    background-color: hsl(248, 32%, 49%);;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    
+    
+
+  }
 
  
   .container_free {
@@ -123,6 +150,8 @@ input:-webkit-autofill {
 input:-webkit-autofill {
     -webkit-text-fill-color: rgb(0, 0, 0) !important;
 }
+
+
 
 // FORMATAÇÃO DOS BOTOES
 
@@ -349,9 +378,117 @@ input:-webkit-autofill {
 // MOBILE
 
   
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 640px) {
 
- 
+  html, body{
+    margin:0px !important;
+    padding: 0px !important;
+ }
+
+ .container {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+ }
+
+ .container_text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+ }
+
+ .container_text h1 {
+  font-size: 2em;
+  width: 400px;
+  text-align: center;
+
+}
+
+.container_text p {
+  width: 400px;
+  text-align: center;
+}
+
+
+.container_free button, select, textarea{
+  
+
+  color: #fff;
+  background-color: $colorSecondary;
+  box-shadow: 0 4px 18px #000;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 70px;
+
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  height: 420px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px  #000;
+}
+
+.form input {
+  width: 250px;
+  margin: 5px auto;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid $colorNeutrol2;
+}
+
+textarea:focus, input:focus, select:focus {
+box-shadow: 0 0 0 0;
+outline: 0;
+border: 2px solid $colorNeutrol2;
+
+
+} 
+
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+input:-webkit-autofill {
+-webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+
+.button_form button {
+width: 250px;
+height: 50px;
+border-radius: 5px;
+border: 1px solid transparent;
+background-color: $colorPrimary2;
+box-shadow: 0 2px 4px #000;
+color: #fff;
+font-weight: 800;
+}
+
+.container_form_text {
+font-size: 12px;
+text-align: center;
+color: $colorNeutrol2;
+}
+
+.container_form_text a {
+text-decoration: none;
+color: $colorPrimary;
+}
+
+
+
+
   
   
 
