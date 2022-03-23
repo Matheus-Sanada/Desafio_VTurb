@@ -1,0 +1,159 @@
+// FORMATAÇÃO GERAL
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  // FORMATAÇÃO DOS ELEMENTOS PAIS
+  
+  body {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    background: url(/assests/layers/layer\ -\ backgroung.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  section {
+  
+    width: 100%;
+    
+  }
+
+  // FORMATAÇÃO DOS TEXTOS
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+  }
+  
+  .container_text {
+    width: 50%;
+    color: #fff;
+  }
+  
+  .container_text h1 {
+    width: 70%;
+    font-size: 3em;
+  }
+  
+  .container_text p {
+    padding-top: 20px;
+    width: 80%;
+  }
+
+
+  
+  // FORMATAÇÃO DO FORMULARIO
+
+ 
+  .container_free {
+      width: 100%;
+      padding: 20px;
+      
+      
+      
+  }
+
+  .container_free button, select, textarea{
+      width: 540px;
+      height: 60px;
+      color: #fff;
+      background-color: $colorSecondary;
+      box-shadow: 0 4px 18px #000;
+      border: 1px solid transparent;
+      cursor: pointer;
+      border-radius: 10px;
+      
+  }
+
+  .container_free  p {
+      font-weight: 900;
+  }
+
+  .container_free  span {
+      font-weight: 100;
+  }
+
+  // FORMATAÇÃO DOS INPUTS
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    height: 474px;
+    width: 540px;
+    border-radius: 10px;
+    margin-left:20px;
+    box-shadow: 0px 5px 10px  #000;
+  }
+
+
+  .form input {
+      width: 460px;
+      margin: 10px auto;
+      height: 56px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $colorNeutrol2;
+  }
+
+  textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 2px solid $colorNeutrol2;
+    
+    
+} 
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+// FORMATAÇÃO DOS BOTOES
+
+.button_form {
+  width: 100%;
+  padding: 20px;
+}
+
+.button_form button {
+    width: 460px;
+    height: 56px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: $colorPrimary2;
+    box-shadow: 0 2px 4px #000;
+    color: #fff;
+    font-weight: 900;
+}
+
+.container_form_text {
+    font-size: 12px;
+    text-align: center;
+    color: $colorNeutrol2;
+}
+
+.container_form_text a {
+    text-decoration: none;
+    color: $colorPrimary;
+}
+  
+
+  
+  
