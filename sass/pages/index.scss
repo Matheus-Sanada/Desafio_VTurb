@@ -41,7 +41,7 @@
   }
   
   .container_text h1 {
-    width: 70%;
+    width: 85%;
     font-size: 3em;
   }
   
@@ -155,5 +155,204 @@ input:-webkit-autofill {
 }
 
 
+//* RESPONSIVIDADE *// 
+
+
+// LAPTOP
+  
+@media screen and (max-width: 1024px) {
+  .container_text h1 {
+    font-size: 2em;
+    width: 80%;
+    
+  }
+
+  .container_text p {
+    width: 80%;
+  }
+
+  .container_free button, select, textarea{
+    width: 400px;
+    height: 60px;
+    color: #fff;
+    background-color: $colorSecondary;
+    box-shadow: 0 4px 18px #000;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 80px;
+    
+}
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    height: 420px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left:100px;
+    box-shadow: 0px 5px 10px  #000;
+  }
+
+  .form input {
+    width: 320px;
+    margin: 5px auto;
+    height: 56px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $colorNeutrol2;
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 2px solid $colorNeutrol2;
+  
+  
+} 
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+
+.button_form button {
+  width: 320px;
+  height: 56px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: $colorPrimary2;
+  box-shadow: 0 2px 4px #000;
+  color: #fff;
+  font-weight: 800;
+}
+
+.container_form_text {
+  font-size: 10px;
+  text-align: center;
+  color: $colorNeutrol2;
+}
+
+.container_form_text a {
+  text-decoration: none;
+  color: $colorPrimary;
+}
 
   
+
+}
+
+
+
+
+
+// TABLET
+  
+@media screen and (max-width: 768px) {
+  .container_text h1 {
+    font-size: 2em;
+    width: 100%;
+    
+  }
+
+  .container_text p {
+    width: 100%;
+  }
+
+  .container_free button, select, textarea{
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    background-color: $colorSecondary;
+    box-shadow: 0 4px 18px #000;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 80px;
+    
+}
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    height: 420px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left:100px;
+    box-shadow: 0px 5px 10px  #000;
+  }
+
+  .form input {
+    width: 250px;
+    margin: 5px auto;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $colorNeutrol2;
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 2px solid $colorNeutrol2;
+  
+  
+} 
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+
+.button_form button {
+  width: 250px;
+  height: 50px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: $colorPrimary2;
+  box-shadow: 0 2px 4px #000;
+  color: #fff;
+  font-weight: 800;
+}
+
+.container_form_text {
+  font-size: 12px;
+  text-align: center;
+  color: $colorNeutrol2;
+}
+
+.container_form_text a {
+  text-decoration: none;
+  color: $colorPrimary;
+}
+
+  
+
+}
+
+// MOBILE
+
+  
+@media screen and (max-width: 425px) {
+
+ 
+  
+  
+
+}
